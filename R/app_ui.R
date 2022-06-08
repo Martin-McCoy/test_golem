@@ -11,7 +11,8 @@ app_ui <- function(request) {
     # Your application UI logic
     fluidPage(
       h1("test_golem"),
-      img(class = "muh_image")
+      img(class = "muh_image"),
+      img(src = "/img/test/test.png", style = "float:right;display:none;")
     )
   )
 }
