@@ -40,3 +40,14 @@ golem::add_dockerfile_shinyproxy()
 
 ## If you want to deploy to Heroku
 golem::add_dockerfile_heroku()
+
+rsconnect::deployApp(
+  appFiles = c(
+    "inst/",
+    "R/",
+    "NAMESPACE",
+    "app.R",
+    ".Rprofile"
+  ),
+  appTitle = "test_golem"
+)
