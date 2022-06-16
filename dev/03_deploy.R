@@ -46,8 +46,10 @@ rsconnect::deployApp(
     "inst/",
     "R/",
     "NAMESPACE",
+    "DESCRIPTION",
     "app.R",
     ".Rprofile"
   ),
+  forceUpdate = TRUE,
   appTitle = "test_golem"
 )
